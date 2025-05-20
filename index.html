@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Party Planner</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .party {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .party button {
+      margin-top: 5px;
+    }
+    form label {
+      display: block;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Party Planner</h1>
+ 
+
+  <div id="party-list"></div>
+ 
+
+  <h2>Add a New Party</h2>
+  <form id="party-form">
+    <label>
+      Name: <input type="text" name="name" required>
+    </label>
+    <label>
+      Date: <input type="date" name="date" required>
+    </label>
+    <label>
+      Time: <input type="time" name="time" required>
+    </label>
+    <label>
+      Location: <input type="text" name="location" required>
+    </label>
+    <label>
+      Description: <textarea name="description" required></textarea>
+    </label>
+    <button type="submit">Add Party</button>
+  </form>
+ 
+
+  <script src="index.js"></script>
+</body>
+</html>
